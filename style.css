@@ -74,7 +74,7 @@ button {
 
   font-size: 1.8rem;
 
-  height: 4rem;
+  height: 5rem;
   padding: 0.8rem 2.4rem;
   border: 0.3rem solid #333;
   border-radius: 1rem;
@@ -102,8 +102,10 @@ button:active {
   border-top: 1.6rem solid #333;
   border-bottom: 1.6rem solid #333;
   border-radius: 50%;
+
   width: 12rem;
   height: 12rem;
+
   animation: spin 2s linear infinite;
 }
 
@@ -113,6 +115,25 @@ button:active {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.loader-text {
+  margin-top: 1.6rem;
+
+  font-size: 2.4rem;
+
+  display: block;
+
+  animation: blink 1s steps(1, start) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
   }
 }
 

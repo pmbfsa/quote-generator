@@ -3,7 +3,7 @@ const quoteText = document.getElementById('quote');
 const quoteAuthor = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
-const loader = document.getElementById('loader');
+const loaderContainer = document.getElementById('loader-container');
 
 let apiQuotes = [];
 
@@ -13,13 +13,13 @@ newQuoteBtn.addEventListener('click', newQuote);
 
 // Show loading
 function loading() {
-  loader.hidden = false;
+  loaderContainer.hidden = false;
   quoteContainer.hidden = true;
 }
 
 // Hide loading
 function complete() {
-  loader.hidden = true;
+  loaderContainer.hidden = true;
   quoteContainer.hidden = false;
 }
 

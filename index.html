@@ -23,7 +23,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="quote-container" id="quote-container">
+    <div class="quote-container" id="quote-container" hidden="true">
       <!-- QUOTE -->
       <div class="quote-text">
         <i class="fa-solid fa-quote-left"></i>
@@ -42,6 +42,9 @@
       </div>
     </div>
     <!-- LOADING -->
-    <div class="loader" id="loader"></div>
+    <div id="loader-container">
+      <div class="loader"></div>
+      <em class="loader-text">Loading</em>
+    </div>
   </body>
 </html>
