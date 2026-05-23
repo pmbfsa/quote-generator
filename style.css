@@ -98,6 +98,26 @@ button:active {
   font-size: 2.4rem;
 }
 
+/* Loading */
+.loader {
+  border: 1.6rem solid #f3f3f3;
+  border-top: 1.6rem solid #333;
+  border-bottom: 1.6rem solid #333;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Media Query: Table or Samller */
 @media screen and (max-width: 62.5em) {
   .quote-container {
