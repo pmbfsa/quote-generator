@@ -75,14 +75,16 @@ button {
   font-size: 1.8rem;
 
   height: 4rem;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 2.4rem;
+  border: 0.3rem solid #333;
   border-radius: 1rem;
 
   box-shadow: 0 0.5rem rgba(121, 121, 121, 0.65);
 }
 
 button:hover {
-  filter: brightness(110%);
+  color: #333;
+  background-color: #fff;
 }
 
 button:active {
@@ -90,11 +92,7 @@ button:active {
   box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
-.twitter-button:hover {
-  color: #38a1f3;
-}
-
-.fa-twitter {
+.fa-x-twitter {
   font-size: 2.4rem;
 }
 
