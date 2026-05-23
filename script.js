@@ -1,10 +1,37 @@
+const quoteContainer = document.getElementById('quote-container');
+const quoteText = document.getElementById('quote');
+const quoteAuthor = document.getElementById('author');
+const twitterBtn = document.getElementById('twitter');
+const newQuoteBtn = document.getElementById('new-quote');
+
 let apiQuotes = [];
+
+// Event listener
+twitterBtn.addEventListener('click', tweetQuote);
+newQuoteBtn.addEventListener('click', newQuote);
+
+// Tweet quote
+function tweetQuote() {
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${quoteAuthor.textContent}`;
+  window.open(tweetUrl, '_blank');
+}
 
 // Show new quote
 function newQuote() {
   // Pick a random quote from apiQuotes array
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
-  console.log(quote);
+
+  // Check quote length to determine styling
+  if (quote.text.length > 100) {
+    quoteText.classList.add('long-quote');
+  } else {
+    quoteText.classList.remove('long-quote');
+  }
+
+  quoteText.textContent = quote.text;
+
+  // Check if author field is blank and replace it with 'Unknown'
+  quoteAuthor.textContent = quote.author ? quote.author : 'Unknown';
 }
 
 // Get quotes from API
