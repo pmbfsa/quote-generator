@@ -23,28 +23,30 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="quote-container" id="quote-container" hidden="true">
-      <!-- QUOTE -->
-      <div class="quote-text">
-        <i class="fa-solid fa-quote-left"></i>
-        <span id="quote"></span>
+    <main>
+      <div class="quote-container" id="quote-container" hidden="true">
+        <!-- QUOTE -->
+        <div class="quote-text">
+          <i class="fa-solid fa-quote-left"></i>
+          <span id="quote"></span>
+        </div>
+        <!-- AUTHOR -->
+        <div class="quote-author">
+          <span id="author"></span>
+        </div>
+        <!-- BUTTONS -->
+        <div class="button-container">
+          <button class="twitter-button" id="twitter" title="Tweet this!">
+            <i class="fa-brands fa-x-twitter"></i>
+          </button>
+          <button id="new-quote">New Quote</button>
+        </div>
       </div>
-      <!-- AUTHOR -->
-      <div class="quote-author">
-        <span id="author"></span>
+      <!-- LOADING -->
+      <div id="loader-container">
+        <div class="loader"></div>
+        <em class="loader-text">Loading</em>
       </div>
-      <!-- BUTTONS -->
-      <div class="button-container">
-        <button class="twitter-button" id="twitter" title="Tweet this!">
-          <i class="fa-brands fa-x-twitter"></i>
-        </button>
-        <button id="new-quote">New Quote</button>
-      </div>
-    </div>
-    <!-- LOADING -->
-    <div id="loader-container">
-      <div class="loader"></div>
-      <em class="loader-text">Loading</em>
-    </div>
+    </main>
   </body>
 </html>

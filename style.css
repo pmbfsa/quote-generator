@@ -96,7 +96,7 @@ button:active {
   font-size: 2.4rem;
 }
 
-/* Loading */
+/* Loader */
 .loader {
   border: 1.6rem solid #f3f3f3;
   border-top: 1.6rem solid #333;
@@ -125,7 +125,7 @@ button:active {
 
   display: block;
 
-  animation: blink 1s steps(1, start) infinite;
+  animation: blink 1s steps(1) infinite;
 }
 
 @keyframes blink {
@@ -137,7 +137,7 @@ button:active {
   }
 }
 
-/* Media Query: Table or Samller */
+/* Media Query: Tablet or Samller */
 @media screen and (max-width: 62.5em) {
   .quote-container {
     margin: auto 1rem;
