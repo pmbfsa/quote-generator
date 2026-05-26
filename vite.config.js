@@ -3,16 +3,18 @@ import sitemap from 'vite-plugin-sitemap';
 import webfontDownload from 'vite-plugin-webfont-dl';
 
 export default defineConfig({
+  base: '',
   plugins: [
     webfontDownload(),
     sitemap({
       hostname: 'https://pmbfsa.github.io/quote-generator/',
+      outDir: 'docs',
     }),
     {
       name: 'inject-preloads',
-      enforce: 'post', // roda depois que o Vite/Rolldown injetou os assets
+      enforce: 'post',
       transformIndexHtml: {
-        order: 'post', // garante que o HTML já tem os <script> e <link> finais
+        order: 'post',
         handler(html) {
           const jsMatch = html.match(/src="(\/assets\/[^"]+\.js)"/);
           const cssMatch = html.match(/href="(\/assets\/[^"]+\.css)"/);
@@ -35,11 +37,12 @@ export default defineConfig({
     },
   ],
   build: {
+    outDir: 'docs',
+    emptyOutDir: true,
     modulePreload: {
       polyfill: true,
     },
     rolldownOptions: {
-      // ← era rollupOptions no Vite 7
       output: {
         entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
