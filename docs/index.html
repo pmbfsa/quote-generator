@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple page that will show a random quote for you. Select a new one or tweet it just by clicking on the buttons."
+    />
+    <title>Quote Generator</title>
+
+    <link rel="modulepreload" crossorigin href="/assets/index-CekhafWJ.js">
+    <link rel="preload" as="style" crossorigin href="/assets/index-DBDoxVrC.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+
+    <script type="module" crossorigin src="/assets/index-CekhafWJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DBDoxVrC.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  </head>
+  <body>
+    <main>
+      <div class="quote-container" id="quote-container">
+        <!-- QUOTE -->
+        <div class="quote-text">
+          <wa-icon class="quote-left-icon" name="quote-left"></wa-icon>
+          <span id="quote"></span>
+        </div>
+
+        <!-- AUTHOR -->
+        <div class="quote-author">
+          <span id="author"></span>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="button-container">
+          <button class="twitter-button" id="twitter" title="Tweet this!">
+            <wa-icon
+              class="x-twitter-icon"
+              name="x-twitter"
+              family="brands"
+            ></wa-icon>
+          </button>
+          <button id="new-quote">New Quote</button>
+        </div>
+      </div>
+
+      <!-- LOADER -->
+      <div class="loader-container" id="loader-container">
+        <div class="loader"></div>
+        <em class="loader-text">Loading</em>
+      </div>
+    </main>
+  </body>
+</html>
