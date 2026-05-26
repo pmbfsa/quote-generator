@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     webfontDownload(),
     sitemap({
-      hostname: 'https://localhost:4173',
+      hostname: 'https://pmbfsa.github.io/quote-generator/',
     }),
     {
       name: 'inject-preloads',
