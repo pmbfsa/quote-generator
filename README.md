@@ -2,15 +2,21 @@
 
 # 💬 Quote Generator
 
-> A clean and responsive random quote generator with one-click tweeting.
-
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100-brightgreen?style=for-the-badge&logo=lighthouse&logoColor=white)
 
+A clean and responsive random quote generator with one-click tweeting.
+
+**[→ Access site](https://pmbfsa.github.io/quote-generator/)**
+
 </div>
+
+---
 
 ## 📖 About
 
 Quote Generator fetches a curated list of quotes and displays a new random one on each click. Found a quote you love? Tweet it instantly with a single button. Built with vanilla JavaScript and Vite, with a focus on performance — achieving a perfect **100/100 Lighthouse score** across all categories.
+
+---
 
 ## ✨ Features
 
@@ -21,9 +27,13 @@ Quote Generator fetches a curated list of quotes and displays a new random one o
 - 📱 Fully responsive for mobile and tablet
 - ♿ Accessible and SEO-friendly
 
+---
+
 ## 🖥️ Demo
 
 ![Quote Generator screenshot](./screenshot.png)
+
+---
 
 ## 🚀 Getting Started
 
@@ -69,6 +79,8 @@ npm run preview
 
 Press `o + enter` to open in your browser.
 
+---
+
 ## 🛠️ Built With
 
 | Technology                                                 | Purpose                           |
@@ -79,6 +91,8 @@ Press `o + enter` to open in your browser.
 | [Montserrat](https://fonts.google.com/specimen/Montserrat) | Typography (self-hosted)          |
 | [Quotes API](https://jacintodesign.github.io/quotes-api/)  | Quote data source                 |
 
+---
+
 ## ⚡ Performance
 
 This project was optimized to achieve a perfect Lighthouse score:
@@ -87,6 +101,8 @@ This project was optimized to achieve a perfect Lighthouse score:
 - **Asset preloading** — custom Vite plugin injects `modulepreload` and `preload` tags for JS and CSS automatically on every build
 - **Zero layout shift** — loader/quote transition uses `visibility` instead of `hidden` to keep layout space reserved
 - **Quote caching** — quotes are cached in `localStorage` for 24h, rendering instantly on repeat visits with background refresh
+
+---
 
 ## 📁 Project Structure
 
@@ -110,6 +126,8 @@ quote-generator/
 ├── package.json
 └── vite.config.js
 ```
+
+---
 
 ## 📄 License
 
