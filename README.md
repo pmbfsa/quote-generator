@@ -6,7 +6,7 @@
 
 A clean and responsive random quote generator with one-click tweeting.
 
-**[→ Access site](https://pmbfsa.github.io/quote-generator/)**
+**[→ See live](https://pmbfsa.github.io/quote-generator/)**
 
 </div>
 
