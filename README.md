@@ -10,13 +10,9 @@ A clean and responsive random quote generator with one-click tweeting.
 
 </div>
 
----
-
 ## 📖 About
 
 Quote Generator fetches a curated list of quotes and displays a new random one on each click. Found a quote you love? Tweet it instantly with a single button. Built with vanilla JavaScript and Vite, with a focus on performance — achieving a perfect **100/100 Lighthouse score** across all categories.
-
----
 
 ## ✨ Features
 
@@ -27,13 +23,9 @@ Quote Generator fetches a curated list of quotes and displays a new random one o
 - 📱 Fully responsive for mobile and tablet
 - ♿ Accessible and SEO-friendly
 
----
-
 ## 🖥️ Demo
 
 ![Quote Generator screenshot](./screenshot.png)
-
----
 
 ## 🚀 Getting Started
 
@@ -79,8 +71,6 @@ npm run preview
 
 Press `o + enter` to open in your browser.
 
----
-
 ## 🛠️ Built With
 
 | Technology                                                 | Purpose                           |
@@ -91,8 +81,6 @@ Press `o + enter` to open in your browser.
 | [Montserrat](https://fonts.google.com/specimen/Montserrat) | Typography (self-hosted)          |
 | [Quotes API](https://jacintodesign.github.io/quotes-api/)  | Quote data source                 |
 
----
-
 ## ⚡ Performance
 
 This project was optimized to achieve a perfect Lighthouse score:
@@ -101,8 +89,6 @@ This project was optimized to achieve a perfect Lighthouse score:
 - **Asset preloading** — custom Vite plugin injects `modulepreload` and `preload` tags for JS and CSS automatically on every build
 - **Zero layout shift** — loader/quote transition uses `visibility` instead of `hidden` to keep layout space reserved
 - **Quote caching** — quotes are cached in `localStorage` for 24h, rendering instantly on repeat visits with background refresh
-
----
 
 ## 📁 Project Structure
 
@@ -126,8 +112,6 @@ quote-generator/
 ├── package.json
 └── vite.config.js
 ```
-
----
 
 ## 📄 License
 
